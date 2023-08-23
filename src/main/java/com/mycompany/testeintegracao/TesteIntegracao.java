@@ -45,6 +45,7 @@ public class TesteIntegracao {
                     JOptionPane.showMessageDialog(null, "Por favor, insira datas válidas dentro do calendário gregoriano e com intervalo de até 100 anos.");
                 } else if (dataAdmissao.isAfter(dataDemissao)) {
                     JOptionPane.showMessageDialog(null, "Data de admissão não pode ser posterior à data de demissão.");
+                    System.exit(0);
                 }
             } catch (DateTimeParseException e) {
                 JOptionPane.showMessageDialog(null, "Formato de data inválido. Digite novamente."); //Não serão aceitos carateres fora do formato AAAA-MM-DD
