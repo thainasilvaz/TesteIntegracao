@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 // Classe para calcular os dias trabalhados
 class Calculadora {
     public static long calcularDiasTrabalhados(LocalDate dataAdmissao, LocalDate dataDemissao) {
-        return ChronoUnit.DAYS.between(dataAdmissao, dataDemissao);
+        return ChronoUnit.DAYS.between(dataAdmissao, dataDemissao)+1;
     }
 }
 
